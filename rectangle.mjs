@@ -1,4 +1,4 @@
-export default (x, y, callback) => {
+export const rectangle = (x, y, callback) => {
     
     if (x <= 0 || y <= 0) {
         callback(new Error(`Rectangle dimensions must be breater than 0.  Received: ${x}, ${y}`));
