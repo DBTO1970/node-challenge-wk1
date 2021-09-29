@@ -1,11 +1,16 @@
 // const rect = require('./rectangle');
 
-import {rectangle as rect} from './rectangle.mjs';
+
+import rect from './rectangle.mjs';
 
 function solveRect(l, w) {
-    
+    console.log(`Solving for rectangle with dimensions ${l}, ${w}`);
 
-    rect();
+    rect(l, w, (err, callback) => {
+        if (err) {
+            console.log(`Error:`, err.message)
+        }
+    });
     console.log('This statement is logged after the call to rect()');
         
 };
